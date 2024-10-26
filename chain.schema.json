@@ -1,0 +1,823 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "Chain",
+  "description": "Chain.json is a metadata file that contains information about a blockchain.",
+  "type": "object",
+  "required": ["chain_name", "chain_type"],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(\\.\\./)+chain\\.schema\\.json$"
+    },
+    "chain_name": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "[a-z0-9]+"
+    },
+    "chain_type": {
+      "type": "string",
+      "minLength": 1,
+      "enum": [
+        "cosmos",
+        "eip155",
+        "bip122",
+        "polkadot",
+        "solana",
+        "algorand",
+        "arweave",
+        "ergo",
+        "fil",
+        "hedera",
+        "monero",
+        "reef",
+        "stacks",
+        "starknet",
+        "stellar",
+        "tezos",
+        "vechain",
+        "waves",
+        "xrpl",
+        "unknown"
+      ],
+      "description": "The 'type' of chain as the corresponding CAIP-2 Namespace value. E.G., 'cosmos' or 'eip155'. Namespaces cna be found here: https://github.com/ChainAgnostic/namespaces/tree/main."
+    },
+    "chain_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "pre_fork_chain_name": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "[a-z0-9]+"
+    },
+    "pretty_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "website": {
+      "type": "string",
+      "minLength": 1,
+      "format": "uri"
+    },
+    "status": {
+      "enum": ["live", "upcoming", "killed"]
+    },
+    "network_type": {
+      "enum": ["mainnet", "testnet", "devnet"]
+    },
+    "bech32_prefix": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The default prefix for the human-readable part of addresses that identifies the coin type. Must be registered with SLIP-0173. E.g., 'cosmos'"
+    },
+    "bech32_config": {
+      "type": "object",
+      "description": "Used to override the bech32_prefix for specific uses.",
+      "properties": {
+        "bech32PrefixAccAddr": {
+          "type": "string",
+          "minLength": 1,
+          "description": "e.g., 'cosmos'"
+        },
+        "bech32PrefixAccPub": {
+          "type": "string",
+          "minLength": 1,
+          "description": "e.g., 'cosmospub'"
+        },
+        "bech32PrefixValAddr": {
+          "type": "string",
+          "minLength": 1,
+          "description": "e.g., 'cosmosvaloper'"
+        },
+        "bech32PrefixValPub": {
+          "type": "string",
+          "minLength": 1,
+          "description": "e.g., 'cosmosvaloperpub'"
+        },
+        "bech32PrefixConsAddr": {
+          "type": "string",
+          "minLength": 1,
+          "description": "e.g., 'cosmosvalcons'"
+        },
+        "bech32PrefixConsPub": {
+          "type": "string",
+          "minLength": 1,
+          "description": "e.g., 'cosmosvalconspub'"
+        }
+      },
+      "additionalProperties": false,
+      "minProperties": 1
+    },
+    "daemon_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "node_home": {
+      "type": "string",
+      "minLength": 1
+    },
+    "key_algos": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["secp256k1", "ethsecp256k1", "ed25519", "sr25519", "bn254"],
+        "uniqueItems": true
+      }
+    },
+    "slip44": {
+      "type": "number"
+    },
+    "alternative_slip44s": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "fees": {
+      "type": "object",
+      "required": ["fee_tokens"],
+      "properties": {
+        "fee_tokens": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/fee_token"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "staking": {
+      "type": "object",
+      "required": ["staking_tokens"],
+      "properties": {
+        "staking_tokens": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/staking_token"
+          }
+        },
+        "lock_duration": {
+          "type": "object",
+          "properties": {
+            "blocks": {
+              "type": "number",
+              "description": "The number of blocks for which the staked tokens are locked."
+            },
+            "time": {
+              "type": "string",
+              "minLength": 1,
+              "description": "The approximate time for which the staked tokens are locked."
+            }
+          },
+          "additionalProperties": false,
+          "minProperties": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "codebase": {
+      "type": "object",
+      "properties": {
+        "git_repo": {
+          "type": "string",
+          "minLength": 1,
+          "format": "uri"
+        },
+        "recommended_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "compatible_versions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "language": {
+          "$ref": "#/$defs/language"
+        },
+        "binaries": {
+          "$ref": "#/$defs/binaries"
+        },
+        "cosmos_sdk_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sdk": {
+          "$ref": "#/$defs/sdk"
+        },
+        "consensus": {
+          "$ref": "#/$defs/consensus"
+        },
+        "cosmwasm": {
+          "$ref": "#/$defs/cosmwasm"
+        },
+        "ibc": {
+          "$ref": "#/$defs/ibc"
+        },
+        "genesis": {
+          "type": "object",
+          "required": ["genesis_url"],
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "genesis_url": {
+              "type": "string",
+              "minLength": 1,
+              "format": "uri"
+            },
+            "ics_ccv_url": {
+              "type": "string",
+              "minLength": 1,
+              "format": "uri"
+            }
+          }
+        },
+        "versions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name"],
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Official Upgrade Name"
+              },
+              "tag": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Git Upgrade Tag"
+              },
+              "height": {
+                "type": "number",
+                "description": "Block Height"
+              },
+              "proposal": {
+                "type": "number",
+                "description": "Proposal that will officially signal community acceptance of the upgrade."
+              },
+              "previous_version_name": {
+                "type": "string",
+                "minLength": 1,
+                "description": "[Optional] Name of the previous version"
+              },
+              "next_version_name": {
+                "type": "string",
+                "minLength": 0,
+                "description": "[Optional] Name of the following version"
+              },
+              "recommended_version": {
+                "type": "string",
+                "minLength": 1
+              },
+              "compatible_versions": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "language": {
+                "$ref": "#/$defs/language"
+              },
+              "cosmos_sdk_version": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sdk": {
+                "$ref": "#/$defs/sdk"
+              },
+              "consensus": {
+                "$ref": "#/$defs/consensus"
+              },
+              "cosmwasm": {
+                "$ref": "#/$defs/cosmwasm"
+              },
+              "ibc": {
+                "$ref": "#/$defs/ibc"
+              },
+              "binaries": {
+                "$ref": "#/$defs/binaries"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "image_sync": {
+            "$ref": "#/$defs/pointer"
+          },
+          "png": {
+            "type": "string",
+            "minLength": 1,
+            "format": "uri-reference",
+            "pattern": "^https://raw\\.githubusercontent\\.com/cosmos/chain-registry/master/(|testnets/|_non-cosmos/)[a-z0-9]+/images/.+\\.png$"
+          },
+          "svg": {
+            "type": "string",
+            "minLength": 1,
+            "format": "uri-reference",
+            "pattern": "^https://raw\\.githubusercontent\\.com/cosmos/chain-registry/master/(|testnets/|_non-cosmos/)[a-z0-9]+/images/.+\\.svg$"
+          },
+          "theme": {
+            "type": "object",
+            "properties": {
+              "primary_color_hex": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^#([0-9a-fA-F]{6}|[0-9a-fA-F]{8})$"
+              },
+              "background_color_hex": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(#([0-9a-fA-F]{6}|[0-9a-fA-F]{8})|none)$"
+              },
+              "circle": {
+                "type": "boolean"
+              },
+              "dark_mode": {
+                "type": "boolean"
+              },
+              "monochrome": {
+                "type": "boolean"
+              }
+            },
+            "minProperties": 1,
+            "additionalProperties": false
+          }
+        },
+        "anyOf": [
+          {
+            "required": ["png"]
+          },
+          {
+            "required": ["svg"]
+          }
+        ],
+        "additionalProperties": false
+      }
+    },
+    "logo_URIs": {
+      "type": "object",
+      "properties": {
+        "png": {
+          "type": "string",
+          "minLength": 1,
+          "format": "uri-reference",
+          "pattern": "^https://raw\\.githubusercontent\\.com/cosmos/chain-registry/master/(|testnets/|_non-cosmos/)[a-z0-9]+/images/.+\\.png$"
+        },
+        "svg": {
+          "type": "string",
+          "minLength": 1,
+          "format": "uri-reference",
+          "pattern": "^https://raw\\.githubusercontent\\.com/cosmos/chain-registry/master/(|testnets/|_non-cosmos/)[a-z0-9]+/images/.+\\.svg$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 3000
+    },
+    "peers": {
+      "type": "object",
+      "properties": {
+        "seeds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/peer"
+          }
+        },
+        "persistent_peers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/peer"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "apis": {
+      "type": "object",
+      "properties": {
+        "rpc": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/endpoint"
+          }
+        },
+        "rest": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/endpoint"
+          }
+        },
+        "grpc": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/endpoint"
+          }
+        },
+        "wss": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/endpoint"
+          }
+        },
+        "grpc-web": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/endpoint"
+          }
+        },
+        "evm-http-jsonrpc": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/endpoint"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "explorers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/explorer"
+      }
+    },
+    "keywords": {
+      "type": "array",
+      "maxContains": 20,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "extra_codecs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "enum": ["ethermint", "injective"],
+        "uniqueItems": true
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "peer": {
+      "type": "object",
+      "required": ["id", "address"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "address": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provider": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "endpoint": {
+      "type": "object",
+      "required": ["address"],
+      "properties": {
+        "address": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provider": {
+          "type": "string",
+          "minLength": 1
+        },
+        "archive": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "explorer": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "minLength": 1
+        },
+        "tx_page": {
+          "type": "string",
+          "minLength": 1
+        },
+        "account_page": {
+          "type": "string",
+          "minLength": 1
+        },
+        "validator_page": {
+          "type": "string",
+          "minLength": 1
+        },
+        "proposal_page": {
+          "type": "string",
+          "minLength": 1
+        },
+        "block_page": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "fee_token": {
+      "type": "object",
+      "required": ["denom"],
+      "properties": {
+        "denom": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fixed_min_gas_price": {
+          "type": "number"
+        },
+        "low_gas_price": {
+          "type": "number"
+        },
+        "average_gas_price": {
+          "type": "number"
+        },
+        "high_gas_price": {
+          "type": "number"
+        },
+        "gas_costs": {
+          "type": "object",
+          "properties": {
+            "cosmos_send": {
+              "type": "number"
+            },
+            "ibc_transfer": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": false,
+          "minProperties": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "staking_token": {
+      "type": "object",
+      "required": ["denom"],
+      "properties": {
+        "denom": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "repo": {
+      "type": "string",
+      "format": "uri",
+      "minLength": 1,
+      "description": "URL of the code repository."
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^v?\\d+(\\.\\d+){0,2}$",
+      "description": "Simple version string (e.g., 'v1.0.0')."
+    },
+    "tag": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^v?\\d+(\\.\\d+){0,2}(-[\\w\\.\\-]+)?$",
+      "description": "Detailed version identifier (e.g., 'v1.0.0-a1s2f43g')."
+    },
+    "sdk": {
+      "type": "object",
+      "required": ["type"],
+      "minProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 1,
+          "enum": ["cosmos", "penumbra", "other"]
+        },
+        "version": {
+          "$ref": "#/$defs/version"
+        },
+        "repo": {
+          "$ref": "#/$defs/repo"
+        },
+        "tag": {
+          "$ref": "#/$defs/tag"
+        }
+      }
+    },
+    "ibc": {
+      "type": "object",
+      "required": ["type"],
+      "minProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 1,
+          "enum": ["go", "rust", "other"]
+        },
+        "version": {
+          "$ref": "#/$defs/version"
+        },
+        "repo": {
+          "$ref": "#/$defs/repo"
+        },
+        "tag": {
+          "$ref": "#/$defs/tag"
+        },
+        "ics_enabled": {
+          "type": "array",
+          "description": "List of IBC apps (usually corresponding to a ICS standard) which have been enabled on the network.",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "description": "IBC app or ICS standard.",
+            "enum": ["ics20-1", "ics27-1", "mauth"]
+          }
+        }
+      }
+    },
+    "cosmwasm": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "$ref": "#/$defs/version"
+        },
+        "repo": {
+          "$ref": "#/$defs/repo"
+        },
+        "tag": {
+          "$ref": "#/$defs/tag"
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Relative path to the cosmwasm directory. ex. $HOME/.juno/data/wasm",
+          "pattern": "^\\$HOME.*$"
+        }
+      }
+    },
+    "consensus": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 1,
+          "enum": ["tendermint", "cometbft", "sei-tendermint"]
+        },
+        "version": {
+          "$ref": "#/$defs/version"
+        },
+        "repo": {
+          "$ref": "#/$defs/repo"
+        },
+        "tag": {
+          "$ref": "#/$defs/tag"
+        }
+      },
+      "additionalProperties": false
+    },
+    "language": {
+      "type": "object",
+      "required": ["type"],
+      "minProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 1,
+          "enum": ["go", "rust", "solidity", "other"]
+        },
+        "version": {
+          "$ref": "#/$defs/version"
+        },
+        "repo": {
+          "$ref": "#/$defs/repo"
+        },
+        "tag": {
+          "$ref": "#/$defs/tag"
+        }
+      }
+    },
+    "binaries": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "linux/amd64": {
+          "type": "string",
+          "minLength": 1,
+          "format": "uri"
+        },
+        "linux/arm64": {
+          "type": "string",
+          "minLength": 1,
+          "format": "uri"
+        },
+        "darwin/amd64": {
+          "type": "string",
+          "minLength": 1,
+          "format": "uri"
+        },
+        "darwin/arm64": {
+          "type": "string",
+          "minLength": 1,
+          "format": "uri"
+        },
+        "windows/amd64": {
+          "type": "string",
+          "minLength": 1,
+          "format": "uri"
+        },
+        "windows/arm64": {
+          "type": "string",
+          "minLength": 1,
+          "format": "uri"
+        }
+      }
+    },
+    "pointer": {
+      "type": "object",
+      "description": "The (primary) key used to identify an object within the Chain Registry.",
+      "required": ["chain_name"],
+      "properties": {
+        "chain_name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The chain name or platform from which the object resides. E.g., 'cosmoshub', 'ethereum', 'forex', or 'nasdaq'"
+        },
+        "base_denom": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The base denom of the asset from which the object originates. E.g., when describing ATOM from Cosmos Hub, specify 'uatom', NOT 'atom' nor 'ATOM'; base units are unique per platform."
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "chain_type": {
+            "const": "cosmos"
+          }
+        }
+      },
+      "then": {
+        "required": ["bech32_prefix"]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "chain_type": {
+            "enum": ["cosmos", "eip155"]
+          }
+        }
+      },
+      "then": {
+        "required": ["chain_id"]
+      }
+    }
+  ]
+}
