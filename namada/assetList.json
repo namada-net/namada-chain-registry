@@ -6,7 +6,7 @@
       "description": "The native token of Namada.",
       "denom_units": [
         {
-          "denom": "namnam",
+          "denom": "unam",
           "exponent": 0
         },
         {
@@ -15,7 +15,7 @@
         }
       ],
       "type_asset": "sdk.coin",
-      "base": "namnam",
+      "base": "unam",
       "name": "NAM",
       "display": "nam",
       "symbol": "NAM"
