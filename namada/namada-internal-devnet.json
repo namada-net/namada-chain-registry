@@ -1,0 +1,52 @@
+{
+  "$schema": "../chain.schema.json",
+  "chain_name": "namada",
+  "status": "upcoming",
+  "network_type": "testnet",
+  "website": "https://namada.net",
+  "pretty_name": "Namada",
+  "chain_type": "namada",
+  "chain_id": "internal-devnet-44a.1bd3e6ca62",
+  "slip44": 118,
+  "bech32_prefix": "tnam",
+  "daemon_name": "unam",
+  "key_algos": ["ed25519"],
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "unam",
+        "fixed_min_gas_price": 0.0025,
+        "low_gas_price": 0.0025,
+        "average_gas_price": 0.025,
+        "high_gas_price": 0.04
+      }
+    ]
+  },
+  "staking": {
+    "staking_tokens": [
+      {
+        "denom": "unam"
+      }
+    ],
+    "lock_duration": {
+      "time": "1209600s"
+    }
+  },
+  "codebase": {
+    "git_repo": "https://github.com/anoma/namada"
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://proxy.public.heliax.work/internal-devnet-44a.1bd3e6ca62",
+        "provider": "Heliax"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://proxy.public.heliax.work/internal-devnet-44a.1bd3e6ca62",
+        "provider": "Heliax"
+      }
+    ]
+  }
+}

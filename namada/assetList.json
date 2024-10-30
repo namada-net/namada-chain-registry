@@ -1,0 +1,24 @@
+{
+  "$schema": "../assetlist.schema.json",
+  "chain_name": "namada",
+  "assets": [
+    {
+      "description": "The native token of Namada.",
+      "denom_units": [
+        {
+          "denom": "unam",
+          "exponent": 0
+        },
+        {
+          "denom": "nam",
+          "exponent": 6
+        }
+      ],
+      "type_asset": "sdk.coin",
+      "base": "unam",
+      "name": "NAM",
+      "display": "nam",
+      "symbol": "NAM"
+    }
+  ]
+}
