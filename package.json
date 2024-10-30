@@ -1,0 +1,14 @@
+{
+  "name": "namada-chain-registry",
+  "version": "0.0.1",
+  "description": "Namada Chain Registry",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anoma/namada-chain-registry.git"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/anoma/namada-chain-registry/issues"
+  },
+  "homepage": "https://github.com/anoma/namada-chain-registry"
+}
