@@ -33,11 +33,7 @@
     }
   },
   "codebase": {
-    "git_repo": "https://github.com/anoma/namada",
-    "language": {
-      "type": "rust",
-      "version": "1.21.4"
-    }
+    "git_repo": "https://github.com/anoma/namada"
   },
   "apis": {
     "rpc": [
