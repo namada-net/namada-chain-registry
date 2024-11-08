@@ -1,12 +1,12 @@
 {
   "$schema": "../chain.schema.json",
-  "chain_name": "namada",
+  "chain_name": "namadahousefire",
   "status": "upcoming",
   "network_type": "testnet",
   "website": "https://namada.net",
   "pretty_name": "Namada",
   "chain_type": "namada",
-  "chain_id": "internal-devnet-44a.1bd3e6ca62",
+  "chain_id": "housefire-cotton.d3c912fee7462",
   "slip44": 118,
   "bech32_prefix": "tnam",
   "daemon_name": "unam",
@@ -38,15 +38,24 @@
   "apis": {
     "rpc": [
       {
-        "address": "https://proxy.public.heliax.work/internal-devnet-44a.1bd3e6ca62",
-        "provider": "Heliax"
-      }
-    ],
-    "rest": [
+        "address": "https://rpc.knowable.run",
+        "provider": "Knowable"
+      },
       {
-        "address": "https://proxy.public.heliax.work/internal-devnet-44a.1bd3e6ca62",
-        "provider": "Heliax"
+        "address": "https://namada-rpc-housefire.mandragora.io",
+        "provider": "Mandragora"
       }
     ]
+  },
+  "explorers": [
+    {
+      "kind": "Shielded.Live",
+      "url": "https://shielded.live/",
+      "tx_page": "https://shielded.live/txs/${txHash}",
+      "account_page": "https://shielded.live/address/${accountAddress}"
+    }
+  ],
+  "logo_URIs": {
+    "svg": "https://raw.githubusercontent.com/anoma/namada-chain-registry/main/namada/images/namada.svg"
   }
 }
