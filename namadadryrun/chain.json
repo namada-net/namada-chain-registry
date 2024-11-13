@@ -6,19 +6,12 @@
   "website": "https://namada.net",
   "pretty_name": "Namada",
   "chain_type": "namada",
-  "chain_id": "housefire-cotton.d3c912fee7462",
+  "chain_id": "namada-dryrun.abaaeaf7b78cb3ac",
   "slip44": 118,
   "bech32_prefix": "tnam",
   "daemon_name": "unam",
   "key_algos": ["ed25519"],
-  "features": [
-    "claimRewards",
-    "masp",
-    "ibcTransfers",
-    "ibcShielding",
-    "shieldingRewards",
-    "namTransfers"
-  ],
+  "features": [],
   "fees": {
     "fee_tokens": [
       {
