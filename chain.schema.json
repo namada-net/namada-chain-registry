@@ -135,6 +135,21 @@
         "type": "number"
       }
     },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "claimRewards",
+          "masp",
+          "ibcTransfers",
+          "ibcShielding",
+          "shieldingRewards",
+          "namTransfers"
+        ],
+        "uniqueItems": true
+      }
+    },
     "fees": {
       "type": "object",
       "required": ["fee_tokens"],
