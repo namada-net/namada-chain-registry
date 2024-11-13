@@ -7,7 +7,7 @@
   "pretty_name": "Namada",
   "chain_type": "namada",
   "chain_id": "housefire-cotton.d3c912fee7462",
-  "slip44": 118,
+  "slip44": 877,
   "bech32_prefix": "tnam",
   "daemon_name": "unam",
   "key_algos": ["ed25519"],
