@@ -39,12 +39,8 @@
   "apis": {
     "rpc": [
       {
-        "address": "https://rpc.knowable.run",
+        "address": "https://rpc.namada-dryrun.tududes.com/",
         "provider": "Knowable"
-      },
-      {
-        "address": "https://namada-rpc-housefire.mandragora.io",
-        "provider": "Mandragora"
       }
     ]
   },
