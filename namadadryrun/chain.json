@@ -11,7 +11,13 @@
   "bech32_prefix": "tnam",
   "daemon_name": "unam",
   "key_algos": ["ed25519"],
-  "features": ["claimRewards", "masp", "ibcTransfers", "ibcShielding"],
+  "features": [
+    "claimRewards",
+    "masp",
+    "ibcTransfers",
+    "ibcShielding",
+    "shieldingRewards"
+  ],
   "fees": {
     "fee_tokens": [
       {
