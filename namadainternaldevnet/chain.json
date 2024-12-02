@@ -6,7 +6,7 @@
   "website": "https://namada.net",
   "pretty_name": "Namada",
   "chain_type": "namada",
-  "chain_id": "internal-devnet-45a.f0579cbb84",
+  "chain_id": "internal-devnet-45a.1881abcfec",
   "slip44": 877,
   "bech32_prefix": "tnam",
   "daemon_name": "unam",
