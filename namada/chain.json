@@ -38,17 +38,14 @@
   },
   "apis": {
     "rpc": [
-      {
-        "address": "https://rpc.namada.tududes.com/",
-        "provider": "Knowable"
-      },
+      { "provider": "TuDudes", "address": "https://rpc.namada.tududes.com" },
       {
         "provider": "Mandragora",
         "address": "https://namada-rpc.mandragora.io"
       },
       {
         "provider": "PowerStaking",
-        "address": "https://namadam.powerstaking.tech/"
+        "address": "https://namadam.powerstaking.tech"
       },
       {
         "provider": "stake.systems",
@@ -56,46 +53,43 @@
       },
       {
         "provider": "5ElementsNodes",
-        "address": "https://rpc-namada.5elementsnodes.com/"
+        "address": "https://rpc-namada.5elementsnodes.com"
       },
       {
         "provider": "itrocket-team",
-        "address": "https://namada-mainnet-rpc.itrocket.net/"
+        "address": "https://namada-mainnet-rpc.itrocket.net"
       },
       {
         "provider": "Sproutstake",
-        "address": "https://namada-rpc.sproutstake.space/"
+        "address": "https://namada-rpc.sproutstake.space"
       },
-      { "provider": "Papadritta", "address": "https://rpc.papadritta.com/" },
+      { "provider": "Papadritta", "address": "https://rpc.papadritta.com" },
       {
         "provider": "Decentrio",
         "address": "https://namada.rpc.decentrio.ventures"
       },
       {
         "provider": "StakePool",
-        "address": "https://rpc.namada.stakepool.dev.br/"
+        "address": "https://rpc.namada.stakepool.dev.br"
       },
-      { "provider": "TNSO", "address": "https://rpc.namadascan.io/" },
+      { "provider": "TNSO", "address": "https://rpc.namadascan.io" },
       {
         "provider": "Synergy",
-        "address": "https://namada-rpc.synergynodes.com/"
+        "address": "https://namada-rpc.synergynodes.com"
       },
       {
         "provider": "L0vd",
         "address": "https://namada-mainnet.rpc.l0vd.com:443"
       },
-      { "provider": "Loser", "address": "https://namada.loserboy.xyz/" },
-      { "provider": "jacky1988", "address": "https://namada.itudou.xyz/" },
-      {
-        "provider": "Validatus",
-        "address": "https://rpc.namada.validatus.com/"
-      }
+      { "provider": "Loser", "address": "https://namada.loserboy.xyz" },
+      { "provider": "jacky1988", "address": "https://namada.itudou.xyz" },
+      { "provider": "Validatus", "address": "https://rpc.namada.validatus.com" }
     ]
   },
   "explorers": [
     {
       "kind": "Shielded.Live",
-      "url": "https://shielded.live/",
+      "url": "https://shielded.live",
       "tx_page": "https://shielded.live/txs/${txHash}",
       "account_page": "https://shielded.live/address/${accountAddress}"
     }
