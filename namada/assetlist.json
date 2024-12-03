@@ -1,6 +1,6 @@
 {
   "$schema": "../assetlist.schema.json",
-  "chain_name": "namadadryrun",
+  "chain_name": "namada",
   "assets": [
     {
       "description": "The native token of Namada.",
