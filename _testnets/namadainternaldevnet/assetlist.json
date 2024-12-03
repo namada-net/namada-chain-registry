@@ -1,6 +1,6 @@
 {
   "$schema": "../assetlist.schema.json",
-  "chain_name": "namadahousefire",
+  "chain_name": "namadainternaldevnet",
   "assets": [
     {
       "description": "The native token of Namada.",
@@ -21,7 +21,7 @@
       "symbol": "NAM",
       "address": "tnam1qy440ynh9fwrx8aewjvvmu38zxqgukgc259fzp6h",
       "logo_URIs": {
-        "svg": "https://raw.githubusercontent.com/anoma/namada-chain-registry/main/namada/images/namada.svg"
+        "svg": "https://raw.githubusercontent.com/anoma/namada-chain-registry/main/_testnets/namadainternaldevnet/images/namada.svg"
       }
     }
   ]

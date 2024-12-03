@@ -39,7 +39,7 @@
   "apis": {
     "rpc": [
       {
-        "address": "https://rpc.namada-dryrun.tududes.com/",
+        "address": "https://rpc.namada.tududes.com/",
         "provider": "Knowable"
       }
     ]
