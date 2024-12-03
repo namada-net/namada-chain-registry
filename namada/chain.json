@@ -1,6 +1,6 @@
 {
   "$schema": "../chain.schema.json",
-  "chain_name": "namadamainnet",
+  "chain_name": "namada",
   "status": "upcoming",
   "network_type": "mainnet",
   "website": "https://namada.net",
