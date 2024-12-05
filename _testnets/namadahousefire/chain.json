@@ -6,7 +6,7 @@
   "website": "https://namada.net",
   "pretty_name": "Namada",
   "chain_type": "namada",
-  "chain_id": "housefire-creek.76ed2d08793c14",
+  "chain_id": "housefire-below.0b9e6c455af037",
   "slip44": 877,
   "bech32_prefix": "tnam",
   "daemon_name": "unam",
