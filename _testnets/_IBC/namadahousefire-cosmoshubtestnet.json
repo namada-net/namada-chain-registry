@@ -7,7 +7,7 @@
   },
   "chain_2": {
     "chain_name": "cosmoshubtestnet",
-    "client_id": "07-tendermint-182",
+    "client_id": "07-tendermint-184",
     "connection_id": "connection-3885"
   },
   "channels": [
@@ -17,7 +17,7 @@
         "port_id": "transfer"
       },
       "chain_2": {
-        "channel_id": "channel-285",
+        "channel_id": "channel-287",
         "port_id": "transfer"
       },
       "ordering": "unordered",
