@@ -1,7 +1,7 @@
 {
   "$schema": "../chain.schema.json",
   "chain_name": "namadahousefire",
-  "status": "upcoming",
+  "status": "live",
   "network_type": "testnet",
   "website": "https://namada.net",
   "pretty_name": "Namada",
