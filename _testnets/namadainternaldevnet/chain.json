@@ -6,7 +6,7 @@
   "website": "https://namada.net",
   "pretty_name": "Namada",
   "chain_type": "namada",
-  "chain_id": "internal-devnet-45a.1881abcfec",
+  "chain_id": "internal-devnet-46a.a4776ee846",
   "slip44": 877,
   "bech32_prefix": "tnam",
   "daemon_name": "unam",
@@ -46,13 +46,13 @@
   "apis": {
     "rpc": [
       {
-        "address": "https://proxy.public.heliax.work/internal-devnet-45a.1881abcfec",
+        "address": "https://proxy.public.heliax.work/internal-devnet-46a.a4776ee846",
         "provider": "Heliax"
       }
     ],
     "rest": [
       {
-        "address": "https://proxy.public.heliax.work/internal-devnet-45a.1881abcfec",
+        "address": "https://proxy.public.heliax.work/internal-devnet-46a.a4776ee846",
         "provider": "Heliax"
       }
     ]
