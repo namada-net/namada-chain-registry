@@ -1,0 +1,28 @@
+{
+  "$schema": "../assetlist.schema.json",
+  "chain_name": "namadacampfire",
+  "assets": [
+    {
+      "description": "The native token of Namada.",
+      "denom_units": [
+        {
+          "denom": "unam",
+          "exponent": 0
+        },
+        {
+          "denom": "nam",
+          "exponent": 6
+        }
+      ],
+      "type_asset": "sdk.coin",
+      "base": "unam",
+      "name": "Namada",
+      "display": "nam",
+      "symbol": "NAM",
+      "address": "tnam1qy440ynh9fwrx8aewjvvmu38zxqgukgc259fzp6h",
+      "logo_URIs": {
+        "svg": "https://raw.githubusercontent.com/anoma/namada-chain-registry/main/_testnets/namadacampfire/images/namada.svg"
+      }
+    }
+  ]
+}
