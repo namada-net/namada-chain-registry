@@ -1,5 +1,5 @@
 {
-  "name": "namada-chain-registry",
+  "name": "@namada/chain-registry",
   "version": "0.0.1",
   "description": "Namada Chain Registry",
   "repository": {
