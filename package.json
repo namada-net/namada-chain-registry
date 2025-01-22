@@ -1,6 +1,6 @@
 {
   "name": "@namada/chain-registry",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Namada Chain Registry",
   "repository": {
     "type": "git",
