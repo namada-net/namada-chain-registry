@@ -10,8 +10,15 @@
   "slip44": 877,
   "bech32_prefix": "tnam",
   "daemon_name": "unam",
-  "key_algos": ["ed25519"],
-  "features": ["claimRewards"],
+  "key_algos": [
+    "ed25519"
+  ],
+  "features": [
+    "claimRewards",
+    "masp",
+    "ibcTransfers",
+    "ibcShielding"
+  ],
   "fees": {
     "fee_tokens": [
       {
