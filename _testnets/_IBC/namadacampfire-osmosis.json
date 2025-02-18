@@ -2,22 +2,22 @@
   "$schema": "../ibc_data.schema.json",
   "chain_1": {
     "chain_name": "namadacampfire",
-    "client_id": "07-tendermint-31",
-    "connection_id": "connection-12"
+    "client_id": "07-tendermint-54",
+    "connection_id": "connection-22"
   },
   "chain_2": {
     "chain_name": "osmosis",
-    "client_id": "07-tendermint-3412",
-    "connection_id": "connection-10559"
+    "client_id": "07-tendermint-3435",
+    "connection_id": "connection-10592"
   },
   "channels": [
     {
       "chain_1": {
-        "channel_id": "channel-5",
+        "channel_id": "channel-13",
         "port_id": "transfer"
       },
       "chain_2": {
-        "channel_id": "channel-97243",
+        "channel_id": "channel-98559",
         "port_id": "transfer"
       },
       "ordering": "unordered",
