@@ -17,7 +17,8 @@
     "claimRewards",
     "masp",
     "ibcTransfers",
-    "ibcShielding"
+    "ibcShielding",
+    "shieldingRewards"
   ],
   "fees": {
     "fee_tokens": [
