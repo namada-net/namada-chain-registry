@@ -10,8 +10,15 @@
   "slip44": 877,
   "bech32_prefix": "tnam",
   "daemon_name": "unam",
-  "key_algos": ["ed25519"],
-  "features": ["claimRewards"],
+  "key_algos": [
+    "ed25519"
+  ],
+  "features": [
+    "claimRewards",
+    "masp",
+    "ibcTransfers",
+    "ibcShielding"
+  ],
   "fees": {
     "fee_tokens": [
       {
@@ -38,7 +45,10 @@
   },
   "apis": {
     "rpc": [
-      { "provider": "TuDudes", "address": "https://rpc.namada.tududes.com" },
+      {
+        "provider": "TuDudes",
+        "address": "https://rpc.namada.tududes.com"
+      },
       {
         "provider": "Mandragora",
         "address": "https://namada-rpc.mandragora.io"
@@ -63,7 +73,10 @@
         "provider": "Sproutstake",
         "address": "https://namada-rpc.sproutstake.space"
       },
-      { "provider": "Papadritta", "address": "https://rpc.papadritta.com" },
+      {
+        "provider": "Papadritta",
+        "address": "https://rpc.papadritta.com"
+      },
       {
         "provider": "Decentrio",
         "address": "https://namada.rpc.decentrio.ventures"
@@ -72,7 +85,10 @@
         "provider": "StakePool",
         "address": "https://rpc.namada.stakepool.dev.br"
       },
-      { "provider": "TNSO", "address": "https://rpc.namadascan.io" },
+      {
+        "provider": "TNSO",
+        "address": "https://rpc.namadascan.io"
+      },
       {
         "provider": "Synergy",
         "address": "https://namada-rpc.synergynodes.com"
@@ -81,13 +97,22 @@
         "provider": "L0vd",
         "address": "https://namada-mainnet.rpc.l0vd.com:443"
       },
-      { "provider": "Loser", "address": "https://namada.loserboy.xyz" },
-      { "provider": "jacky1988", "address": "https://namada.itudou.xyz" },
+      {
+        "provider": "Loser",
+        "address": "https://namada.loserboy.xyz"
+      },
+      {
+        "provider": "jacky1988",
+        "address": "https://namada.itudou.xyz"
+      },
       {
         "provider": "Validatus",
         "address": "https://rpc.namada.validatus.com"
       },
-      { "provider": "anodeofzen", "address": "https://namada-rpc.zenode.app" }
+      {
+        "provider": "anodeofzen",
+        "address": "https://namada-rpc.zenode.app"
+      }
     ]
   },
   "explorers": [
