@@ -14,10 +14,7 @@
     "ed25519"
   ],
   "features": [
-    "claimRewards",
-    "masp",
-    "ibcTransfers",
-    "ibcShielding"
+    "claimRewards"
   ],
   "fees": {
     "fee_tokens": [
