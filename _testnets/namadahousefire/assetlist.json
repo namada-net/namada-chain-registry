@@ -23,6 +23,308 @@
       "logo_URIs": {
         "svg": "https://raw.githubusercontent.com/anoma/namada-chain-registry/main/_testnets/namadahousefire/images/namada.svg"
       }
+    },
+    {
+      "description": "Stride's liquid staked OSMO",
+      "denom_units": [
+        {
+          "denom": "ibc/4263C1D1EEEA066572F679EF212BDD522ADF0E57C86819AF260C8BC82BD87602",
+          "exponent": 0,
+          "aliases": ["stuosmo"]
+        },
+        {
+          "denom": "stosmo",
+          "exponent": 6
+        }
+      ],
+      "type_asset": "ics20",
+      "base": "ibc/75249A18DEFBEFE55F83B1C70CAD234DF164F174C6BC51682EE92C2C81C18C93",
+      "name": "Stride Staked OSMO",
+      "display": "stosmo",
+      "symbol": "stOSMO",
+      "address": "tnam1p46jfxscmma7le2lswcuwr9dydxlze83wsjdkygq",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "stride",
+            "base_denom": "stuosmo",
+            "channel_id": "channel-306"
+          },
+          "chain": {
+            "channel_id": "channel-8",
+            "path": "transfer/channel-8/stuosmo"
+          }
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.png",
+        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.svg"
+      },
+      "images": [
+        {
+          "image_sync": {
+            "chain_name": "stride",
+            "base_denom": "stuosmo"
+          },
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/stosmo.svg",
+          "theme": {
+            "primary_color_hex": "#e40474"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Stride's liquid staked ATOM",
+      "denom_units": [
+        {
+          "denom": "ibc/054A44EC8D9B68B9A6F0D5708375E00A5569A28F21E0064FF12CADC3FEF1D04F",
+          "exponent": 0,
+          "aliases": ["stuatom"]
+        },
+        {
+          "denom": "statom",
+          "exponent": 6
+        }
+      ],
+      "type_asset": "ics20",
+      "base": "ibc/B7864B03E1B9FD4F049243E92ABD691586F682137037A9F3FCA5222815620B3C",
+      "name": "Stride Staked ATOM",
+      "display": "statom",
+      "symbol": "stATOM",
+      "address": "tnam1pkmcvjcruxul6ncyjfp7j24ady2cda5zzvudakty",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "stride",
+            "base_denom": "stuatom",
+            "channel_id": "channel-306"
+          },
+          "chain": {
+            "channel_id": "channel-8",
+            "path": "transfer/channel-8/stuatom"
+          }
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.png",
+        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.svg"
+      },
+      "images": [
+        {
+          "image_sync": {
+            "chain_name": "stride",
+            "base_denom": "stuatom"
+          },
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.svg",
+          "theme": {
+            "primary_color_hex": "#e40474"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Stride's liquid staked TIA",
+      "denom_units": [
+        {
+          "denom": "ibc/F46BA5EDCA6DAA5F7EFD3838430E03647CDC786BB1B89BC9FDD1CBE16B099645",
+          "exponent": 0,
+          "aliases": ["stutia"]
+        },
+        {
+          "denom": "stTIA",
+          "exponent": 6
+        }
+      ],
+      "type_asset": "ics20",
+      "base": "ibc/6569E05DEE32B339D9286A52BE33DFCEFC97267F23EF9CFDE0C055140967A9A5",
+      "name": "Stride Staked TIA",
+      "display": "stTIA",
+      "symbol": "stTIA",
+      "address": "tnam1p4jknczaacetxwwe9p49903nml80e9ex0ufqh3kr",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "stride",
+            "base_denom": "stutia",
+            "channel_id": "channel-306"
+          },
+          "chain": {
+            "channel_id": "channel-8",
+            "path": "transfer/channel-8/stutia"
+          }
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/sttia.png",
+        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/sttia.svg"
+      },
+      "images": [
+        {
+          "image_sync": {
+            "chain_name": "stride",
+            "base_denom": "stutia"
+          },
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/sttia.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/sttia.svg",
+          "theme": {
+            "primary_color_hex": "#e40474"
+          }
+        }
+      ]
+    },
+    {
+      "description": "The native token of Osmosis",
+      "denom_units": [
+        {
+          "denom": "ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B",
+          "exponent": 0,
+          "aliases": ["uosmo"]
+        },
+        {
+          "denom": "osmo",
+          "exponent": 6
+        }
+      ],
+      "type_asset": "ics20",
+      "base": "ibc/FAC1BAAA6ECDCB88408A6EEEA13AD4736DA687F85ACD22B5BBD00D36754AC0FA",
+      "name": "Osmosis",
+      "display": "osmo",
+      "symbol": "OSMO",
+      "address": "tnam1phavrw42dmxuhzzq3fhwagf663ekmf58lqedrqcv",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "osmosis",
+            "base_denom": "uosmo",
+            "channel_id": "channel-98130"
+          },
+          "chain": {
+            "channel_id": "channel-7",
+            "path": "transfer/channel-7/uosmo"
+          }
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
+        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg"
+      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg",
+          "theme": {
+            "primary_color_hex": "#760dbb"
+          }
+        }
+      ]
+    },
+    {
+      "description": "The native staking and governance token of the Cosmos Hub.",
+      "denom_units": [
+        {
+          "denom": "ibc/9117A26BA81E29FA4F78F57DC2BD90CD3D26848101BA880445F119B22A1E254E",
+          "exponent": 0,
+          "aliases": ["uatom"]
+        },
+        {
+          "denom": "atom",
+          "exponent": 6
+        }
+      ],
+      "type_asset": "ics20",
+      "base": "ibc/45C001A5AE212D09879BE4627C45B64D5636086285590D5145A51E18E9D16722",
+      "name": "Cosmos Hub",
+      "display": "atom",
+      "symbol": "ATOM",
+      "address": "tnam1p4zuqqd94csj6zv8n0jxylz9kex4vdsgvg3uglw9",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "cosmoshub",
+            "base_denom": "uatom",
+            "channel_id": "channel-1315"
+          },
+          "chain": {
+            "channel_id": "channel-9",
+            "path": "transfer/channel-9/uatom"
+          }
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png",
+        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg"
+      },
+      "images": [
+        {
+          "image_sync": {
+            "chain_name": "cosmoshub",
+            "base_denom": "uatom"
+          },
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg",
+          "theme": {
+            "primary_color_hex": "#272d45"
+          }
+        }
+      ]
+    },
+    {
+      "description": "The native token of the Celestia blockchain.",
+      "denom_units": [
+        {
+          "denom": "ibc/BF28D9C17E0306B194D50F51C3B2590BEAD15E04E03ADD34C3A26E62D85C9676",
+          "exponent": 0,
+          "aliases": ["utia"]
+        },
+        {
+          "denom": "tia",
+          "exponent": 6
+        }
+      ],
+      "type_asset": "ics20",
+      "base": "ibc/DA9AC2708B4DAA46D24E73241373CDCC850BC6446E8E0906A4062152B649DDD3",
+      "name": "Celestia",
+      "display": "tia",
+      "symbol": "TIA",
+      "address": "tnam1phdf4sns3dx653kjfeejgymnehxg2z7xgs4z956n",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "celestia",
+            "base_denom": "utia",
+            "channel_id": "channel-72"
+          },
+          "chain": {
+            "channel_id": "channel-10",
+            "path": "transfer/channel-10/utia"
+          }
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png",
+        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg"
+      },
+      "images": [
+        {
+          "image_sync": {
+            "chain_name": "celestia",
+            "base_denom": "utia"
+          },
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg",
+          "theme": {
+            "primary_color_hex": "#7c2cfb"
+          }
+        }
+      ]
     }
   ]
 }
