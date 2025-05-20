@@ -28,7 +28,7 @@
       "description": "Stride's liquid staked OSMO",
       "denom_units": [
         {
-          "denom": "ibc/4263C1D1EEEA066572F679EF212BDD522ADF0E57C86819AF260C8BC82BD87602",
+          "denom": "ibc/75249A18DEFBEFE55F83B1C70CAD234DF164F174C6BC51682EE92C2C81C18C93",
           "exponent": 0,
           "aliases": ["stuosmo"]
         },
@@ -79,7 +79,7 @@
       "description": "Stride's liquid staked ATOM",
       "denom_units": [
         {
-          "denom": "ibc/054A44EC8D9B68B9A6F0D5708375E00A5569A28F21E0064FF12CADC3FEF1D04F",
+          "denom": "ibc/B7864B03E1B9FD4F049243E92ABD691586F682137037A9F3FCA5222815620B3C",
           "exponent": 0,
           "aliases": ["stuatom"]
         },
@@ -130,7 +130,7 @@
       "description": "Stride's liquid staked TIA",
       "denom_units": [
         {
-          "denom": "ibc/F46BA5EDCA6DAA5F7EFD3838430E03647CDC786BB1B89BC9FDD1CBE16B099645",
+          "denom": "ibc/6569E05DEE32B339D9286A52BE33DFCEFC97267F23EF9CFDE0C055140967A9A5",
           "exponent": 0,
           "aliases": ["stutia"]
         },
@@ -181,7 +181,7 @@
       "description": "The native token of Osmosis",
       "denom_units": [
         {
-          "denom": "ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B",
+          "denom": "ibc/FAC1BAAA6ECDCB88408A6EEEA13AD4736DA687F85ACD22B5BBD00D36754AC0FA",
           "exponent": 0,
           "aliases": ["uosmo"]
         },
@@ -228,7 +228,7 @@
       "description": "The native staking and governance token of the Cosmos Hub.",
       "denom_units": [
         {
-          "denom": "ibc/9117A26BA81E29FA4F78F57DC2BD90CD3D26848101BA880445F119B22A1E254E",
+          "denom": "ibc/45C001A5AE212D09879BE4627C45B64D5636086285590D5145A51E18E9D16722",
           "exponent": 0,
           "aliases": ["uatom"]
         },
