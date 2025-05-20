@@ -289,7 +289,7 @@
         }
       ],
       "type_asset": "ics20",
-      "base": "ibc/DA9AC2708B4DAA46D24E73241373CDCC850BC6446E8E0906A4062152B649DDD3",
+      "base": "ibc/BE9125D6E248B9BE897F732722E9EAF67F2050020FF44CD4D59BB1E0DCDBE874",
       "name": "Celestia",
       "display": "tia",
       "symbol": "TIA",
@@ -300,11 +300,11 @@
           "counterparty": {
             "chain_name": "celestia",
             "base_denom": "utia",
-            "channel_id": "channel-72"
+            "channel_id": "channel-113"
           },
           "chain": {
-            "channel_id": "channel-10",
-            "path": "transfer/channel-10/utia"
+            "channel_id": "channel-13",
+            "path": "transfer/channel-13/utia"
           }
         }
       ],
