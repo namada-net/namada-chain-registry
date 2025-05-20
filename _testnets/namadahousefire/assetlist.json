@@ -279,7 +279,7 @@
       "description": "The native token of the Celestia blockchain.",
       "denom_units": [
         {
-          "denom": "ibc/BF28D9C17E0306B194D50F51C3B2590BEAD15E04E03ADD34C3A26E62D85C9676",
+          "denom": "ibc/BE9125D6E248B9BE897F732722E9EAF67F2050020FF44CD4D59BB1E0DCDBE874",
           "exponent": 0,
           "aliases": ["utia"]
         },
@@ -293,7 +293,7 @@
       "name": "Celestia",
       "display": "tia",
       "symbol": "TIA",
-      "address": "tnam1phdf4sns3dx653kjfeejgymnehxg2z7xgs4z956n",
+      "address": "tnam1pklfzfwkufytn05f0aejwghfatm87gzsqg5acf5p",
       "traces": [
         {
           "type": "ibc",
