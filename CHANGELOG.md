@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/anoma/namada-chain-registry/compare/v1.2.0...v1.3.0) (2025-05-21)
+
+
+### Features
+
+* housefire ibc assets ([#58](https://github.com/anoma/namada-chain-registry/issues/58)) ([e2b3ee0](https://github.com/anoma/namada-chain-registry/commit/e2b3ee0f74e74dcafd12842acd4e98a74beb3130))
+
 ## [1.2.0](https://github.com/anoma/namada-chain-registry/compare/v1.1.0...v1.2.0) (2025-05-09)
 
 
