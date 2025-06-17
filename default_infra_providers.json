@@ -1,0 +1,12 @@
+{
+  "housefire": {
+    "rpc": "https://namada-housefire-rpc.emberstake.xyz",
+    "indexer": "https://namada-housefire-idx.emberstake.xyz",
+    "masp": "https://namada-housefire-masp-idx.emberstake.xyz"
+  },
+  "mainnet": {
+    "rpc": "https://namada-rpc.emberstake.xyz",
+    "indexer": "https://namada-idx.emberstake.xyz",
+    "masp": "https://namada-masp-idx.emberstake.xyz"
+  }
+}
