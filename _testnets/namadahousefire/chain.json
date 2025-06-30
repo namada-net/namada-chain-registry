@@ -50,6 +50,42 @@
       {
         "address": "https://rpc.housefire.tududes.com",
         "provider": "Tududes"
+      }, 
+      {
+        "address": "https://namada-rpc-housefire.mandragora.io",
+        "provider": "Mandragora"
+      },
+      {
+        "address": "https://namada-housefire-rpc.denodes.xyz",
+        "provider": "DeNodes"
+      },
+      {
+        "address": "https://rpc.housefire.natsai.xyz",
+        "provider": "Natsai"
+      },
+      {
+        "address": "https://namada-housefire-rpc.emberstake.xyz",
+        "provider": "EmberStake"
+      },
+      {
+        "address": "https://rpc.housefire.max-03.xyz",
+        "provider": "max-02"
+      },
+      {
+        "address": "https://rpc.testnet.namada.coverlet.io",
+        "provider": "Coverlet"
+      },
+      {
+        "address": "https://housefire.rpc.papadritta.com",
+        "provider": "papadritta"
+      },
+      {
+        "address": "https://housefire-rpc.sproutstake.space",
+        "provider": "SproutStake"
+      },
+      {
+        "address": "https://housefire-rpc.sproutstake.space",
+        "provider": "Laliola"
       }
     ]
   },
