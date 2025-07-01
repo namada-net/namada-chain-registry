@@ -7,8 +7,7 @@
       "denom_units": [
         {
           "denom": "ibc/C7110DEC66869DAE9BE9C3C60F4B5313B16A2204AE020C3B0527DD6B322386A3",
-          "exponent": 0,
-          "aliases": ["unam"]
+          "exponent": 0
         },
         {
           "denom": "nam",
@@ -21,20 +20,6 @@
       "display": "nam",
       "symbol": "NAM",
       "address": "tnam1q9gr66cvu4hrzm0sd5kmlnjje82gs3xlfg3v6nu7",
-      "traces": [
-        {
-          "type": "ibc",
-          "counterparty": {
-            "chain_name": "osmosis",
-            "base_denom": "ibc/C7110DEC66869DAE9BE9C3C60F4B5313B16A2204AE020C3B0527DD6B322386A3",
-            "channel_id": "channel-1"
-          },
-          "chain": {
-            "channel_id": "channel-0",
-            "path": "transfer/channel-0/ibc/C7110DEC66869DAE9BE9C3C60F4B5313B16A2204AE020C3B0527DD6B322386A3"
-          }
-        }
-      ],
       "logo_URIs": {
         "svg": "https://raw.githubusercontent.com/anoma/namada-chain-registry/main/namada/images/namada.svg"
       }
