@@ -325,6 +325,48 @@
           }
         }
       ]
+    },
+    {
+      "description": "The native token of Babylon Genesis.",
+      "denom_units": [
+        {
+          "denom": "ibc/5E59488AE83AB40EA182F829C20CBE45749CE77921E25441C9B51C46F9D35CA7",
+          "exponent": 0,
+          "aliases": ["ubbn"]
+        },
+        {
+          "denom": "baby",
+          "exponent": 6
+        }
+      ],
+      "type_asset": "ics20",
+      "base": "ibc/5E59488AE83AB40EA182F829C20CBE45749CE77921E25441C9B51C46F9D35CA7",
+      "name": "Babylon",
+      "display": "baby",
+      "symbol": "BABY",
+      "address": "tnam1p409jjy2aqatgr4pstuznssvhezhf8880yw0nzsj",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "babylon",
+            "base_denom": "ubbn",
+            "channel_id": "channel-9"
+          },
+          "chain": {
+            "channel_id": "channel-21",
+            "path": "transfer/channel-21/ubbn"
+          }
+        }
+      ],
+      "logo_URIs": {
+        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/babylon/images/logo.svg"
+      },
+      "images": [
+        {
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/babylon/images/logo.svg"
+        }
+      ]
     }
   ]
 }
