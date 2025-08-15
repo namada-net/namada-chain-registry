@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.0](https://github.com/anoma/namada-chain-registry/compare/v1.3.0...v1.4.0) (2025-06-30)
+
+
+### Features
+
+* add default infra for namadillo ([#63](https://github.com/anoma/namada-chain-registry/issues/63)) ([c2bd3e6](https://github.com/anoma/namada-chain-registry/commit/c2bd3e6276ea8c2b6ad07ddcaae28f43aec82286))
+* enable phase 5 for mainnet! ([#61](https://github.com/anoma/namada-chain-registry/issues/61)) ([b533534](https://github.com/anoma/namada-chain-registry/commit/b533534ae648f17aa6edf9ae0874d8088ee923fd))
+
 ## [1.3.0](https://github.com/anoma/namada-chain-registry/compare/v1.2.0...v1.3.0) (2025-05-21)
 
 
