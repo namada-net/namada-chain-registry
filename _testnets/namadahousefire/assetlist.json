@@ -28,7 +28,7 @@
       "description": "Stride's liquid staked OSMO",
       "denom_units": [
         {
-          "denom": "ibc/75249A18DEFBEFE55F83B1C70CAD234DF164F174C6BC51682EE92C2C81C18C93",
+          "denom": "ibc/380A4DDB09D71AA647E183850900B30DDD51B12154E58E980CB1FDBA4264A7A2",
           "exponent": 0,
           "aliases": ["stuosmo"]
         },
@@ -38,22 +38,22 @@
         }
       ],
       "type_asset": "ics20",
-      "base": "ibc/75249A18DEFBEFE55F83B1C70CAD234DF164F174C6BC51682EE92C2C81C18C93",
+      "base": "ibc/380A4DDB09D71AA647E183850900B30DDD51B12154E58E980CB1FDBA4264A7A2",
       "name": "Stride Staked OSMO",
       "display": "stosmo",
       "symbol": "stOSMO",
-      "address": "tnam1p46jfxscmma7le2lswcuwr9dydxlze83wsjdkygq",
+      "address": "tnam1p5uq5nwmp8t34fj8uxpc2zgqkvxa65d3yydtz5ph",
       "traces": [
         {
           "type": "ibc",
           "counterparty": {
             "chain_name": "stride",
             "base_denom": "stuosmo",
-            "channel_id": "channel-306"
+            "channel_id": "channel-324"
           },
           "chain": {
-            "channel_id": "channel-8",
-            "path": "transfer/channel-8/stuosmo"
+            "channel_id": "channel-15",
+            "path": "transfer/channel-15/stuosmo"
           }
         }
       ],
@@ -79,7 +79,7 @@
       "description": "Stride's liquid staked ATOM",
       "denom_units": [
         {
-          "denom": "ibc/B7864B03E1B9FD4F049243E92ABD691586F682137037A9F3FCA5222815620B3C",
+          "denom": "ibc/988C0E56D4110A352D281A50F26F19A8C118C3CD6F3C1EF9F36063722E27B85E",
           "exponent": 0,
           "aliases": ["stuatom"]
         },
@@ -89,22 +89,22 @@
         }
       ],
       "type_asset": "ics20",
-      "base": "ibc/B7864B03E1B9FD4F049243E92ABD691586F682137037A9F3FCA5222815620B3C",
+      "base": "ibc/988C0E56D4110A352D281A50F26F19A8C118C3CD6F3C1EF9F36063722E27B85E",
       "name": "Stride Staked ATOM",
       "display": "statom",
       "symbol": "stATOM",
-      "address": "tnam1pkmcvjcruxul6ncyjfp7j24ady2cda5zzvudakty",
+      "address": "tnam1pkvgcrjk6sgs5dfd9qd9pun0rx5vzxxre5amfn6m",
       "traces": [
         {
           "type": "ibc",
           "counterparty": {
             "chain_name": "stride",
             "base_denom": "stuatom",
-            "channel_id": "channel-306"
+            "channel_id": "channel-324"
           },
           "chain": {
-            "channel_id": "channel-8",
-            "path": "transfer/channel-8/stuatom"
+            "channel_id": "channel-15",
+            "path": "transfer/channel-15/stuatom"
           }
         }
       ],
@@ -130,7 +130,7 @@
       "description": "Stride's liquid staked TIA",
       "denom_units": [
         {
-          "denom": "ibc/6569E05DEE32B339D9286A52BE33DFCEFC97267F23EF9CFDE0C055140967A9A5",
+          "denom": "ibc/8E253BD439CDFDC41D95507D9661CD8593F3A7A42F9B8968D99C40F51073FCDF",
           "exponent": 0,
           "aliases": ["stutia"]
         },
@@ -140,7 +140,7 @@
         }
       ],
       "type_asset": "ics20",
-      "base": "ibc/6569E05DEE32B339D9286A52BE33DFCEFC97267F23EF9CFDE0C055140967A9A5",
+      "base": "ibc/8E253BD439CDFDC41D95507D9661CD8593F3A7A42F9B8968D99C40F51073FCDF",
       "name": "Stride Staked TIA",
       "display": "stTIA",
       "symbol": "stTIA",
@@ -151,11 +151,11 @@
           "counterparty": {
             "chain_name": "stride",
             "base_denom": "stutia",
-            "channel_id": "channel-306"
+            "channel_id": "channel-324"
           },
           "chain": {
-            "channel_id": "channel-8",
-            "path": "transfer/channel-8/stutia"
+            "channel_id": "channel-15",
+            "path": "transfer/channel-15/stutia"
           }
         }
       ],
@@ -181,7 +181,7 @@
       "description": "The native token of Osmosis",
       "denom_units": [
         {
-          "denom": "ibc/FAC1BAAA6ECDCB88408A6EEEA13AD4736DA687F85ACD22B5BBD00D36754AC0FA",
+          "denom": "ibc/A2FBEE4E434A1224933AF8381346853C270DF96B3141E77E4BF25F8502596D8E",
           "exponent": 0,
           "aliases": ["uosmo"]
         },
@@ -191,22 +191,22 @@
         }
       ],
       "type_asset": "ics20",
-      "base": "ibc/FAC1BAAA6ECDCB88408A6EEEA13AD4736DA687F85ACD22B5BBD00D36754AC0FA",
+      "base": "ibc/A2FBEE4E434A1224933AF8381346853C270DF96B3141E77E4BF25F8502596D8E",
       "name": "Osmosis",
       "display": "osmo",
       "symbol": "OSMO",
-      "address": "tnam1phavrw42dmxuhzzq3fhwagf663ekmf58lqedrqcv",
+      "address": "tnam1pk30hmjwgd9pyfyn8tursy6xs57zwr0edvmylg48",
       "traces": [
         {
           "type": "ibc",
           "counterparty": {
             "chain_name": "osmosis",
             "base_denom": "uosmo",
-            "channel_id": "channel-98130"
+            "channel_id": "channel-104562"
           },
           "chain": {
-            "channel_id": "channel-7",
-            "path": "transfer/channel-7/uosmo"
+            "channel_id": "channel-18",
+            "path": "transfer/channel-18/uosmo"
           }
         }
       ],
@@ -279,7 +279,7 @@
       "description": "The native token of the Celestia blockchain.",
       "denom_units": [
         {
-          "denom": "ibc/BE9125D6E248B9BE897F732722E9EAF67F2050020FF44CD4D59BB1E0DCDBE874",
+          "denom": "ibc/881D644015FFB6479933699E07735396ADE5685E2A2D21D5C8F284C724D2CDD9",
           "exponent": 0,
           "aliases": ["utia"]
         },
@@ -289,22 +289,22 @@
         }
       ],
       "type_asset": "ics20",
-      "base": "ibc/BE9125D6E248B9BE897F732722E9EAF67F2050020FF44CD4D59BB1E0DCDBE874",
+      "base": "ibc/881D644015FFB6479933699E07735396ADE5685E2A2D21D5C8F284C724D2CDD9",
       "name": "Celestia",
       "display": "tia",
       "symbol": "TIA",
-      "address": "tnam1pklfzfwkufytn05f0aejwghfatm87gzsqg5acf5p",
+      "address": "tnam1pkyp6ezqzhlmv3uexd5eupmn2wt2metgtcd76pzs",
       "traces": [
         {
           "type": "ibc",
           "counterparty": {
             "chain_name": "celestia",
             "base_denom": "utia",
-            "channel_id": "channel-113"
+            "channel_id": "channel-114"
           },
           "chain": {
-            "channel_id": "channel-13",
-            "path": "transfer/channel-13/utia"
+            "channel_id": "channel-18",
+            "path": "transfer/channel-18/utia"
           }
         }
       ],
@@ -417,6 +417,50 @@
             "circle": true,
             "primary_color_hex": "#2775CA"
           }
+        }
+      ]
+    },
+    {
+      "description": "USDN is a yielding stablecoin collateral-backed by short-duration U.S. Treasury Bills (testnet).",
+      "denom_units": [
+        {
+          "denom": "ibc/2A5FC6A85C58E75285944AC232A1A03781ED7801979AE5B99302B6F3AD9068E2",
+          "exponent": 0,
+          "aliases": ["uusdn"]
+        },
+        {
+          "denom": "usdn",
+          "exponent": 6
+        }
+      ],
+      "type_asset": "ics20",
+      "base": "ibc/2A5FC6A85C58E75285944AC232A1A03781ED7801979AE5B99302B6F3AD9068E2",
+      "name": "Usdn",
+      "display": "usdn",
+      "symbol": "USDN",
+      "address": "tnam1p549l34gt3vww559j39vyv4p5qmcrmtcqyxh5vgu",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "nobletestnet",
+            "base_denom": "uusdn",
+            "channel_id": "channel-639"
+          },
+          "chain": {
+            "channel_id": "channel-27",
+            "path": "transfer/channel-27/uusdn"
+          }
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDN.png",
+        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDN.svg"
+      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDN.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDN.svg"
         }
       ]
     }
