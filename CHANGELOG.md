@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/namada-net/namada-chain-registry/compare/v1.4.0...v1.5.0) (2025-10-20)
+
+
+### Features
+
+* release cosmos by adding cheeky readme change ([#74](https://github.com/namada-net/namada-chain-registry/issues/74)) ([f6b9f5b](https://github.com/namada-net/namada-chain-registry/commit/f6b9f5b85f2168b8ee3dca77ba887820fb3c58fc))
+
 ## [1.4.0](https://github.com/anoma/namada-chain-registry/compare/v1.3.0...v1.4.0) (2025-06-30)
 
 
