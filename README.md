@@ -14,4 +14,4 @@ In this repository, you will find the following:
 
 ## Usage
 
-This repository can be used as a reference for developers and integrators looking to interact with Namada chains or testnets. It provides a standard format for chains, assets, and IBC channels.
+This repository can be used as a reference for developers, and integrators, looking to interact with Namada chains or testnets. It provides a standard format for chains, assets, and IBC channels.
