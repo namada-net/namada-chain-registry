@@ -228,7 +228,7 @@
       "description": "The native staking and governance token of the Cosmos Hub.",
       "denom_units": [
         {
-          "denom": "ibc/5499230889EDDA3E3B4C2801646F2433B78F2C77CFDFD60ADE8DB98B47422D75",
+          "denom": "ibc/2BA2FBF2359D10AD29710E695F9D2F1D2C7AD62E7DA58FE9EFC550586D5DB839",
           "exponent": 0,
           "aliases": ["uatom"]
         },
@@ -238,22 +238,22 @@
         }
       ],
       "type_asset": "ics20",
-      "base": "ibc/5499230889EDDA3E3B4C2801646F2433B78F2C77CFDFD60ADE8DB98B47422D75",
+      "base": "ibc/2BA2FBF2359D10AD29710E695F9D2F1D2C7AD62E7DA58FE9EFC550586D5DB839",
       "name": "Cosmos Hub",
       "display": "atom",
       "symbol": "ATOM",
-      "address": "tnam1p42fjgcg38ka503mfs5qzer0ysem0revwu3lvgny",
+      "address": "tnam1p54697ljxkw3ptffwy8xjhua9uwjc7kk9cc6fxnw",
       "traces": [
         {
           "type": "ibc",
           "counterparty": {
             "chain_name": "cosmoshub",
             "base_denom": "uatom",
-            "channel_id": "channel-1485"
+            "channel_id": "channel-14568"
           },
           "chain": {
-            "channel_id": "channel-26",
-            "path": "transfer/channel-26/uatom"
+            "channel_id": "channel-28",
+            "path": "transfer/channel-28/uatom"
           }
         }
       ],
