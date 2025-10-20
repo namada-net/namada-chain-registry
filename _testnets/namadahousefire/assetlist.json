@@ -249,7 +249,7 @@
           "counterparty": {
             "chain_name": "cosmoshub",
             "base_denom": "uatom",
-            "channel_id": "channel-14568"
+            "channel_id": "channel-1568"
           },
           "chain": {
             "channel_id": "channel-28",
