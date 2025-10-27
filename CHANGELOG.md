@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/namada-net/namada-chain-registry/compare/v1.5.0...v1.5.1) (2025-10-27)
+
+
+### Bug Fixes
+
+* update alternate infra ([#76](https://github.com/namada-net/namada-chain-registry/issues/76)) ([712ece7](https://github.com/namada-net/namada-chain-registry/commit/712ece7f96b8879f7bbdeb77f0891f2458df4cbb))
+
 ## [1.5.0](https://github.com/namada-net/namada-chain-registry/compare/v1.4.0...v1.5.0) (2025-10-20)
 
 
