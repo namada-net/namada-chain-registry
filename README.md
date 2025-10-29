@@ -1,6 +1,6 @@
 # Namada Chain Registry
 
-This repository serves as a centralized source of information for the Namada mainnet and its associated testnets. The data provided here is actively maintained and will continue to evolve as the Namada ecosystem grows.
+This repository serves as a centralized source of information for the Namada mainnet and its testnets. The data provided here is actively maintained and will continue to evolve as the Namada ecosystem grows.
 
 The structure and organization of this repository are modeled after the [Cosmos Chain Registry](https://github.com/cosmos/chain-registry).
 
