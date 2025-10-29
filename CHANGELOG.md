@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.2](https://github.com/namada-net/namada-chain-registry/compare/v1.5.1...v1.5.2) (2025-10-29)
+
+
+### Bug Fixes
+
+* update readme for tag release ([#79](https://github.com/namada-net/namada-chain-registry/issues/79)) ([8a1ab6a](https://github.com/namada-net/namada-chain-registry/commit/8a1ab6a2ef92c3de6a5b3117b2951e6bf348150b))
+
 ## [1.5.1](https://github.com/namada-net/namada-chain-registry/compare/v1.5.0...v1.5.1) (2025-10-27)
 
 
